@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class OutputValuesBelow {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      int[] userValues = new int[20];   // List of integers from input
+      int numElements = scanner.nextInt();
+      int threshold = scanner.nextInt();
+
+      int[] userValues = new int[numElements];
+
+      for (int i = 0; i < numElements; i++) {
+         userValue[i] = scanner.nextInt();
+
+         for (int i = 0; i < numElements; i++) {
+            if (userValues[i] <= threshold) {
+               System.out.print(userValues[i] + " ");
+            }
+         }
+      }
+
+
+
+
+
+   }
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class MiddleItem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int[] numbers = new int[9];
+        int count = 0;
+        int num;
+
+        while ((num = scanner.nextInt()) >= 0 && count < 9) {
+            numbers[count] = num;
+            count++;
+        }
+
+
+        if (count > 9) {
+            System.out.println("Too many inputs");
+            return;
+        }
+        else{
+             int middleIndex = (count - 1) / 2;
+
+
+             System.out.println(numbers[middleIndex]);
+        }
+    }
+}

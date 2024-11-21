@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class TwoSmallest{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int numIntegers = scanner.nextInt();
+
+
+        int[] numbers = new int[numIntegers];
+
+
+        for (int i = 0; i < numIntegers; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+
+
+        int smallest = numbers[0];
+        int secondSmallest = Integer.MAX_VALUE;
+        for (int i = 1; i < numIntegers; i++) {
+            if (numbers[i] < smallest) {
+                secondSmallest = smallest;
+                smallest = numbers[i];
+            } else if (numbers[i] < secondSmallest) {
+                secondSmallest = numbers[i];
+            }
+        }
+
+
+        System.out.println(smallest + " " + secondSmallest);
+    }
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ReverseNumbers {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+
+        int numIntegers = scnr.nextInt();
+
+        int[] numbers = new int[numIntegers];
+
+        for (int i = 0; i < numIntegers; i++) {
+
+            numbers[i] = scnr.nextInt();
+        }
+
+        for (int i = numIntegers - 1; i >= 0; i--) {
+
+            System.out.print(numbers[i] + " ");
+        }
+
+        System.out.println();
+      }
+
+}
